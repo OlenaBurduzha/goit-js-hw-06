@@ -1,7 +1,6 @@
 
 const counter = parent => { return parent.childElementCount };
-const message = elements => {
-    elements.forEach(element => {
+const message = elements => {elements.forEach(element => {
         const firstElem = element.firstElementChild;
         const secondElem = firstElem.nextElementSibling;
         console.log(`Category: ${firstElem.textContent}`);
